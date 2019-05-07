@@ -1,0 +1,121 @@
+PODS:
+  - CTMediator (25)
+  - EleInvoiceCategory (0.0.2):
+    - CTMediator
+  - FBRetainCycleDetector (0.1.4)
+  - IQKeyboardManager (6.2.0)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - ModuleB (0.0.3):
+    - ModuleB/Controller (= 0.0.3)
+    - ModuleB/Target (= 0.0.3)
+  - ModuleB/Controller (0.0.3)
+  - ModuleB/Target (0.0.3):
+    - ModuleB/Controller
+  - ModuleBCategory (0.0.2):
+    - CTMediator
+  - ReactiveObjC (3.1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - WLBaseView (0.0.1):
+    - ReactiveObjC
+    - WLBaseView/Code (= 0.0.1)
+  - WLBaseView/Code (0.0.1):
+    - ReactiveObjC
+  - WLForm (0.0.1):
+    - IQKeyboardManager
+    - Masonry
+    - WLBaseView
+    - WLForm/Code (= 0.0.1)
+    - WLIconFont
+    - WLWidget
+  - WLForm/Code (0.0.1):
+    - IQKeyboardManager
+    - Masonry
+    - WLBaseView
+    - WLIconFont
+    - WLWidget
+  - WLIconFont (0.0.1)
+  - WLMElectronicInvoice (0.0.7):
+    - Masonry
+    - MJExtension
+    - MLeaksFinder
+    - ReactiveObjC
+    - WLBaseView
+    - WLForm
+    - WLIconFont
+    - WLMElectronicInvoice/Code (= 0.0.7)
+    - WLModal
+    - WLPickerView
+    - WLWidget
+  - WLMElectronicInvoice/Code (0.0.7):
+    - Masonry
+    - MJExtension
+    - MLeaksFinder
+    - ReactiveObjC
+    - WLBaseView
+    - WLForm
+    - WLIconFont
+    - WLModal
+    - WLPickerView
+    - WLWidget
+  - WLModal (0.0.2):
+    - Masonry
+    - SDWebImage
+    - WLBaseView
+    - WLIconFont
+    - WLModal/Modal (= 0.0.2)
+    - WLWidget
+  - WLModal/Modal (0.0.2):
+    - Masonry
+    - SDWebImage
+    - WLBaseView
+    - WLIconFont
+    - WLWidget
+  - WLPickerView (0.0.1):
+    - WLPickerView/Code (= 0.0.1)
+  - WLPickerView/Code (0.0.1)
+  - WLWidget (0.0.1):
+    - SDWebImage
+    - WLWidget/Category (= 0.0.1)
+    - WLWidget/Macro (= 0.0.1)
+    - WLWidget/SComponent (= 0.0.1)
+  - WLWidget/Category (0.0.1):
+    - SDWebImage
+  - WLWidget/Macro (0.0.1):
+    - SDWebImage
+  - WLWidget/SComponent (0.0.1):
+    - SDWebImage
+
+DEPENDENCIES:
+  - EleInvoiceCategory
+  - ModuleB
+  - ModuleBCategory
+  - WLMElectronicInvoice
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  EleInvoiceCategory: a84f556bbbf488b23d2c0b10563eef8afa24e9ce
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  ModuleB: f5047ea5598dd9b46bd6af9677aabccb9c564271
+  ModuleBCategory: cd34e72f1a51ba8bfab8e202dd67c835048f9c44
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89
+  WLForm: 898c772489162654cf72d40451341b036446f7eb
+  WLIconFont: bacf1ac5b9107847deab23c0e5217ebff1d9f51e
+  WLMElectronicInvoice: c4805d9d619fbefeea5160d3111187392213b1c2
+  WLModal: baa4157b082528f6b2db9b5066f7d2e3d775fcca
+  WLPickerView: 7e6c0d7794e00ed406b3a7509df393f01cdfd8f5
+  WLWidget: d046a5165612a9bc9fe9a1a8fd75f0261bef1838
+
+PODFILE CHECKSUM: 5de93f3effb33d754efef50029f77f68994a6b02
+
+COCOAPODS: 1.4.0
