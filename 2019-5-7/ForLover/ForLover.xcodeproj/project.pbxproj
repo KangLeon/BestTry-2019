@@ -19,14 +19,12 @@
 		846B828A22846EED0011577F /* 冰淇淋.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827422846EEC0011577F /* 冰淇淋.json */; };
 		846B828B22846EED0011577F /* 人脸识别.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827522846EEC0011577F /* 人脸识别.json */; };
 		846B828C22846EED0011577F /* 咖啡.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827622846EEC0011577F /* 咖啡.json */; };
-		846B828D22846EED0011577F /* 任务完成.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827722846EEC0011577F /* 任务完成.json */; };
 		846B828E22846EED0011577F /* 微信消息.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827822846EEC0011577F /* 微信消息.json */; };
 		846B828F22846EED0011577F /* 温温的东西.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827922846EEC0011577F /* 温温的东西.json */; };
 		846B829022846EEE0011577F /* 啤酒.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827A22846EEC0011577F /* 啤酒.json */; };
 		846B829122846EEE0011577F /* 日历.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827B22846EEC0011577F /* 日历.json */; };
 		846B829222846EEE0011577F /* 父母赞同.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827C22846EED0011577F /* 父母赞同.json */; };
 		846B829322846EEE0011577F /* 小猫.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827D22846EED0011577F /* 小猫.json */; };
-		846B829422846EEE0011577F /* 男生心动.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827E22846EED0011577F /* 男生心动.json */; };
 		846B829522846EEE0011577F /* 心心心心.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B827F22846EED0011577F /* 心心心心.json */; };
 		846B829622846EEE0011577F /* 牛角面包.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B828022846EED0011577F /* 牛角面包.json */; };
 		846B829722846EEE0011577F /* 骑自行车旅游.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B828122846EED0011577F /* 骑自行车旅游.json */; };
@@ -36,6 +34,8 @@
 		846B829B22846EEE0011577F /* 房子.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B828522846EED0011577F /* 房子.json */; };
 		846B829C22846EEE0011577F /* 披萨.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B828622846EED0011577F /* 披萨.json */; };
 		846B829D22846EEE0011577F /* 女超人.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B828722846EED0011577F /* 女超人.json */; };
+		846B82A0228846E70011577F /* 交往的那一天.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 846B829F228846E70011577F /* 交往的那一天.jpg */; };
+		846B82A222884BC50011577F /* 任务完成.json in Resources */ = {isa = PBXBuildFile; fileRef = 846B82A122884BC50011577F /* 任务完成.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,14 +56,12 @@
 		846B827422846EEC0011577F /* 冰淇淋.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "冰淇淋.json"; sourceTree = "<group>"; };
 		846B827522846EEC0011577F /* 人脸识别.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "人脸识别.json"; sourceTree = "<group>"; };
 		846B827622846EEC0011577F /* 咖啡.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "咖啡.json"; sourceTree = "<group>"; };
-		846B827722846EEC0011577F /* 任务完成.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "任务完成.json"; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/给女朋友的/任务完成.json"; sourceTree = "<group>"; };
 		846B827822846EEC0011577F /* 微信消息.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "微信消息.json"; sourceTree = "<group>"; };
 		846B827922846EEC0011577F /* 温温的东西.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "温温的东西.json"; sourceTree = "<group>"; };
 		846B827A22846EEC0011577F /* 啤酒.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "啤酒.json"; sourceTree = "<group>"; };
 		846B827B22846EEC0011577F /* 日历.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "日历.json"; sourceTree = "<group>"; };
 		846B827C22846EED0011577F /* 父母赞同.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "父母赞同.json"; sourceTree = "<group>"; };
 		846B827D22846EED0011577F /* 小猫.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "小猫.json"; sourceTree = "<group>"; };
-		846B827E22846EED0011577F /* 男生心动.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "男生心动.json"; sourceTree = "<group>"; };
 		846B827F22846EED0011577F /* 心心心心.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "心心心心.json"; sourceTree = "<group>"; };
 		846B828022846EED0011577F /* 牛角面包.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "牛角面包.json"; sourceTree = "<group>"; };
 		846B828122846EED0011577F /* 骑自行车旅游.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "骑自行车旅游.json"; sourceTree = "<group>"; };
@@ -73,6 +71,8 @@
 		846B828522846EED0011577F /* 房子.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "房子.json"; sourceTree = "<group>"; };
 		846B828622846EED0011577F /* 披萨.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "披萨.json"; sourceTree = "<group>"; };
 		846B828722846EED0011577F /* 女超人.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "女超人.json"; sourceTree = "<group>"; };
+		846B829F228846E70011577F /* 交往的那一天.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "交往的那一天.jpg"; sourceTree = "<group>"; };
+		846B82A122884BC50011577F /* 任务完成.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "任务完成.json"; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/给女朋友的/任务完成.json"; sourceTree = "<group>"; };
 		F756A469AB8E68E16067CDCF /* Pods-ForLover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForLover.debug.xcconfig"; path = "Target Support Files/Pods-ForLover/Pods-ForLover.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +126,7 @@
 		846B829E228472C10011577F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				846B829F228846E70011577F /* 交往的那一天.jpg */,
 				846B828522846EED0011577F /* 房子.json */,
 				846B827422846EEC0011577F /* 冰淇淋.json */,
 				846B828322846EED0011577F /* 读书.json */,
@@ -133,14 +134,13 @@
 				846B827222846EEC0011577F /* 结婚.json */,
 				846B827622846EEC0011577F /* 咖啡.json */,
 				846B828422846EED0011577F /* 礼物盒子.json */,
-				846B827E22846EED0011577F /* 男生心动.json */,
 				846B828022846EED0011577F /* 牛角面包.json */,
 				846B828722846EED0011577F /* 女超人.json */,
 				846B828622846EED0011577F /* 披萨.json */,
 				846B827A22846EEC0011577F /* 啤酒.json */,
 				846B828122846EED0011577F /* 骑自行车旅游.json */,
+				846B82A122884BC50011577F /* 任务完成.json */,
 				846B827522846EEC0011577F /* 人脸识别.json */,
-				846B827722846EEC0011577F /* 任务完成.json */,
 				846B827B22846EEC0011577F /* 日历.json */,
 				846B827822846EEC0011577F /* 微信消息.json */,
 				846B827922846EEC0011577F /* 温温的东西.json */,
@@ -158,7 +158,6 @@
 				F756A469AB8E68E16067CDCF /* Pods-ForLover.debug.xcconfig */,
 				3835705B6BF02B07B136BFCE /* Pods-ForLover.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -232,8 +231,8 @@
 				846B828822846EED0011577F /* 结婚.json in Resources */,
 				846B829B22846EEE0011577F /* 房子.json in Resources */,
 				846B826922846E950011577F /* LaunchScreen.storyboard in Resources */,
-				846B829422846EEE0011577F /* 男生心动.json in Resources */,
 				846B829A22846EEE0011577F /* 礼物盒子.json in Resources */,
+				846B82A0228846E70011577F /* 交往的那一天.jpg in Resources */,
 				846B829522846EEE0011577F /* 心心心心.json in Resources */,
 				846B828922846EED0011577F /* 心跳.json in Resources */,
 				846B826622846E950011577F /* Assets.xcassets in Resources */,
@@ -244,8 +243,8 @@
 				846B829222846EEE0011577F /* 父母赞同.json in Resources */,
 				846B829622846EEE0011577F /* 牛角面包.json in Resources */,
 				846B829722846EEE0011577F /* 骑自行车旅游.json in Resources */,
+				846B82A222884BC50011577F /* 任务完成.json in Resources */,
 				846B829322846EEE0011577F /* 小猫.json in Resources */,
-				846B828D22846EED0011577F /* 任务完成.json in Resources */,
 				846B829C22846EEE0011577F /* 披萨.json in Resources */,
 				846B829022846EEE0011577F /* 啤酒.json in Resources */,
 				846B829D22846EEE0011577F /* 女超人.json in Resources */,
