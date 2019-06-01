@@ -22,7 +22,17 @@ class ViewController: UIViewController {
         
         let title = sender.title(for: .normal)
         let plainText = "\(String(describing: title)) button pressed"
-        statusLabel.text=plainText
+//        statusLabel.text=plainText
+        
+        let styledText = NSMutableAttributedString(string: plainText)
+        
+        let attributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: statusLabel.font.pointSize)]
+        
+        let nameRange = (plainText as NSString).range(of: title!)
+        
+        styledText.setAttributes(attributes, range: nameRange)
+        
+        statusLabel.attributedText = styledText
     }
 }
 
