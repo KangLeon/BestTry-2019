@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (2.5.2)
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - lottie-ios (~> 2.5.2)
+  - ReactiveObjC (~> 3.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: 8ce4c08f32dc75f9f7168248a8e485918a935cc7
+
+COCOAPODS: 1.6.0.beta.2
