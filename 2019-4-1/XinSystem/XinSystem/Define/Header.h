@@ -10,7 +10,7 @@
 #define Header_h
 
 /* 1:正式环境；0:测试环境 */
-#define IS_SERVER               0
+#define IS_SERVER               1
 
 //域名
 #define XS_HOST                     IS_SERVER==1 ? @"https://xinapi.csmc-cloud.com" : @"https://forbid.csmc-cloud.com"
