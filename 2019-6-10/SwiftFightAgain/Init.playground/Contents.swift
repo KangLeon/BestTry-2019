@@ -62,5 +62,24 @@ struct CelsiusNone {
 
 let bodyTemperature = CelsiusNone(37.0)
 
+class SurveyQustion {
+    var text: String
+    var response: String?
+    init(text: String) {
+        self.text = text
+    }
+    func ask() {
+        print(text)
+    }
+}
 
+let cheeseQuestion = SurveyQustion(text: "do you like cheese?")
+cheeseQuestion.ask()
+
+cheeseQuestion.response = "Yes, I do like cheese"
+
+
+class ShoppingListItem {
+    
+}
 
