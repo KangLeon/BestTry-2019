@@ -46,6 +46,12 @@ for item in liarary {
 
 print("Media library contains \(movieCount) movies and \(songCount) songs")
 
-
+for item in liarary {
+    if let movie = item as? Movie {
+        print("Movie: \(movie.name), dir. \(movie.director)")
+    }else if let song = item as? Song {
+        print("Song: \(song.name), by \(song.artist)")
+    }
+}
 
 
