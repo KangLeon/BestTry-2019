@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SwiftWether
+//  weather
 //
-//  Created by 吉腾蛟 on 2019/7/3.
-//  Copyright © 2019 JY. All rights reserved.
+//  Created by Kevin on 6/16/18.
+//  Copyright © 2018 gix. All rights reserved.
 //
 
 import UIKit
@@ -16,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        Seniverse.daily()
-        
+            
         return true
     }
 
