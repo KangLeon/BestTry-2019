@@ -1,0 +1,3 @@
+/Users/jitengjiao/Desktop/MyResposity/BestTry-2019/2019-7-18/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jitengjiao/Desktop/MyResposity/BestTry-2019/2019-7-18/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jitengjiao/Desktop/MyResposity/BestTry-2019/2019-7-18/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir
