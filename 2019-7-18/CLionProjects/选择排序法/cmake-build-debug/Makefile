@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-support.o: support.cpp.o
-
-.PHONY : support.o
-
-# target to build an object file
-support.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/support.cpp.o
-.PHONY : support.cpp.o
-
-support.i: support.cpp.i
-
-.PHONY : support.i
-
-# target to preprocess a source file
-support.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/support.cpp.i
-.PHONY : support.cpp.i
-
-support.s: support.cpp.s
-
-.PHONY : support.s
-
-# target to generate assembly for a file
-support.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/support.cpp.s
-.PHONY : support.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... support.o"
-	@echo "... support.i"
-	@echo "... support.s"
 .PHONY : help
 
 
