@@ -57,12 +57,19 @@
     NSString *type=info[UIImagePickerControllerMediaType];
     //如果媒体类型是图片类型
     if ([type isEqualToString:(__bridge NSString *)kUTTypeImage]) {
-        
+        //获取采集到的图片
+        UIImage *image=info[UIImagePickerControllerOriginalImage];
+        //显示到UI界面
+        self.imageView.image=image;
     }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 //取消采集图片的处理
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    NSLog(@"");
     
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
