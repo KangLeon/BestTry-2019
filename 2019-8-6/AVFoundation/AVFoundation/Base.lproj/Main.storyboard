@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,40 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDT-7A-3qa">
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-pI-DL9">
+                                <rect key="frame" x="176" y="84" width="62" height="30"/>
+                                <state key="normal" title="采集图片"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gni-9x-lhe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FDT-7A-3qa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IfE-xn-bsT"/>
+                            <constraint firstAttribute="trailing" secondItem="FDT-7A-3qa" secondAttribute="trailing" id="WNJ-VD-0aK"/>
+                            <constraint firstItem="FDT-7A-3qa" firstAttribute="top" secondItem="8xu-pI-DL9" secondAttribute="bottom" constant="35" id="bBC-DR-cbk"/>
+                            <constraint firstItem="FDT-7A-3qa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hvy-ck-2Tn"/>
+                            <constraint firstItem="8xu-pI-DL9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="jej-mr-EOe"/>
+                            <constraint firstItem="8xu-pI-DL9" firstAttribute="centerX" secondItem="FDT-7A-3qa" secondAttribute="centerX" id="qnZ-7g-pYy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="FDT-7A-3qa" id="X3X-87-aqa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
