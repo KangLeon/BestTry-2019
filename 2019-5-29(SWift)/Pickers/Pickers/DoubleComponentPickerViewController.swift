@@ -8,7 +8,20 @@
 
 import UIKit
 
-class DoubleComponentPickerViewController: UIViewController {
+class DoubleComponentPickerViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+    @IBOutlet weak var doublePicker: UIPickerView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        <#code#>
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +29,10 @@ class DoubleComponentPickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

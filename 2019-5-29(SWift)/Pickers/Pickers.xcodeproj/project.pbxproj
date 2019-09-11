@@ -12,7 +12,7 @@
 		599C7F532328DFCD00E8DFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F512328DFCD00E8DFD1 /* Main.storyboard */; };
 		599C7F552328DFCE00E8DFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F542328DFCE00E8DFD1 /* Assets.xcassets */; };
 		599C7F582328DFCE00E8DFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F562328DFCE00E8DFD1 /* LaunchScreen.storyboard */; };
-		599C7F602328E05D00E8DFD1 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F5F2328E05D00E8DFD1 /* DateViewController.swift */; };
+		599C7F602328E05D00E8DFD1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F5F2328E05D00E8DFD1 /* DatePickerViewController.swift */; };
 		599C7F622328E07100E8DFD1 /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F612328E07100E8DFD1 /* SingleComponentPickerViewController.swift */; };
 		599C7F642328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F632328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift */; };
 		599C7F662328E0E900E8DFD1 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F652328E0E900E8DFD1 /* DependentComponentPickerViewController.swift */; };
@@ -27,7 +27,7 @@
 		599C7F542328DFCE00E8DFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599C7F572328DFCE00E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599C7F592328DFCE00E8DFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		599C7F5F2328E05D00E8DFD1 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		599C7F5F2328E05D00E8DFD1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		599C7F612328E07100E8DFD1 /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		599C7F632328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		599C7F652328E0E900E8DFD1 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			children = (
 				599C7F4D2328DFCD00E8DFD1 /* AppDelegate.swift */,
 				599C7F4F2328DFCD00E8DFD1 /* ViewController.swift */,
-				599C7F5F2328E05D00E8DFD1 /* DateViewController.swift */,
+				599C7F5F2328E05D00E8DFD1 /* DatePickerViewController.swift */,
 				599C7F612328E07100E8DFD1 /* SingleComponentPickerViewController.swift */,
 				599C7F632328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift */,
 				599C7F652328E0E900E8DFD1 /* DependentComponentPickerViewController.swift */,
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				599C7F502328DFCD00E8DFD1 /* ViewController.swift in Sources */,
-				599C7F602328E05D00E8DFD1 /* DateViewController.swift in Sources */,
+				599C7F602328E05D00E8DFD1 /* DatePickerViewController.swift in Sources */,
 				599C7F662328E0E900E8DFD1 /* DependentComponentPickerViewController.swift in Sources */,
 				599C7F642328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift in Sources */,
 				599C7F682328E0FE00E8DFD1 /* CustomPickerViewController.swift in Sources */,

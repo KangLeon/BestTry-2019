@@ -8,15 +8,27 @@
 
 import UIKit
 
-class DateViewController: UIViewController {
+class DatePickerViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        let date = datePicker.date
+        let message = "你选择的时间是 \(date)"
+        
+        let alert = UIAlertController(title: "日期和时间被选择了", message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "好的", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
