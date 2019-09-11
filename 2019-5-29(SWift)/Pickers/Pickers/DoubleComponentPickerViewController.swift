@@ -10,6 +10,10 @@ import UIKit
 
 class DoubleComponentPickerViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     @IBOutlet weak var doublePicker: UIPickerView!
+    private let fillingComponent = 0
+    private let breadComponent = 1
+    private let fillingTypes = ["Ham","Turkey","Penut Butter","Tuna Salad","Chicken Salad","Roast Beef","Vegemite"]
+    private let breadTypes = ["White","whole Wheat","Rye","Sourdough","Seven Grain"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         <#code#>
@@ -30,7 +34,18 @@ class DoubleComponentPickerViewController: UIViewController,UIPickerViewDataSour
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
+        let fillingRow = doublePicker.selectedRow(inComponent: fillingComponent)
+        let breadRow = doublePicker.selectedRow(inComponent: breadComponent)
         
+        let filling = fillingTypes[fillingRow]
+        let bread = breadTypes[breadRow]
+        let message = "你选择的果酱 \(filling)添加在 \(bread)中将会特别好 "
+        
+        let alert = UIAlertController(title: "谢谢你的选择", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Great", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     /*
