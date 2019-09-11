@@ -33,14 +33,22 @@ class SwitchingViewController: UIViewController {
             }
         }
         
+        UIView.beginAnimations("view Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        
         //切换视图控制器
         if blueViewController != nil && blueViewController!.view.superview != nil {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             yellowViewController.view.frame = view.frame
-            switchViewcontroller(from: blueViewController, to: blueViewController)
+            switchViewcontroller(from: blueViewController, to: yellowViewController)
         }else{
+            UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             blueViewController.view.frame = view.frame
             switchViewcontroller(from: yellowViewController, to: blueViewController)
         }
+        
+        UIView.commitAnimations()
     }
     
     private func switchViewcontroller(from fromVC:UIViewController?,to toVC: UIViewController?){
