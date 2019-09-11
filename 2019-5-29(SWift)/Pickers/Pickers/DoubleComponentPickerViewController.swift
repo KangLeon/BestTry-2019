@@ -16,15 +16,23 @@ class DoubleComponentPickerViewController: UIViewController,UIPickerViewDataSour
     private let breadTypes = ["White","whole Wheat","Rye","Sourdough","Seven Grain"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        <#code#>
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        if component == breadComponent {
+            return breadTypes.count
+        }else{
+            return fillingTypes.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        <#code#>
+        if component == breadComponent {
+            return breadTypes[row]
+        }else{
+            return fillingTypes[row]
+        }
     }
 
     override func viewDidLoad() {
