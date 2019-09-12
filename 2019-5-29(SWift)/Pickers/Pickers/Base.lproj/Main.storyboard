@@ -134,6 +134,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="RU0-wf-zsf"/>
                     <connections>
+                        <outlet property="button" destination="bzb-QL-SMD" id="RwJ-Oy-wCB"/>
                         <outlet property="picker" destination="wa4-sj-VEX" id="bnm-0Z-FLU"/>
                         <outlet property="winLabel" destination="yIH-FL-A4S" id="m2A-6f-Pyo"/>
                     </connections>

@@ -18,6 +18,8 @@
 		599C7F642328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F632328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift */; };
 		599C7F662328E0E900E8DFD1 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F652328E0E900E8DFD1 /* DependentComponentPickerViewController.swift */; };
 		599C7F682328E0FE00E8DFD1 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F672328E0FE00E8DFD1 /* CustomPickerViewController.swift */; };
+		599C7F7D2329E48000E8DFD1 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F7B2329E48000E8DFD1 /* crunch.wav */; };
+		599C7F7E2329E48000E8DFD1 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F7C2329E48000E8DFD1 /* win.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		599C7F632328E0D200E8DFD1 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		599C7F652328E0E900E8DFD1 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		599C7F672328E0FE00E8DFD1 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		599C7F7B2329E48000E8DFD1 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		599C7F7C2329E48000E8DFD1 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		599C7F4C2328DFCD00E8DFD1 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				599C7F7B2329E48000E8DFD1 /* crunch.wav */,
+				599C7F7C2329E48000E8DFD1 /* win.wav */,
 				0933820523293EFB001F83FE /* statedictionary.plist */,
 				599C7F4D2328DFCD00E8DFD1 /* AppDelegate.swift */,
 				599C7F4F2328DFCD00E8DFD1 /* ViewController.swift */,
@@ -140,8 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599C7F7D2329E48000E8DFD1 /* crunch.wav in Resources */,
 				599C7F582328DFCE00E8DFD1 /* LaunchScreen.storyboard in Resources */,
 				599C7F552328DFCE00E8DFD1 /* Assets.xcassets in Resources */,
+				599C7F7E2329E48000E8DFD1 /* win.wav in Resources */,
 				0933820623293EFB001F83FE /* statedictionary.plist in Resources */,
 				599C7F532328DFCD00E8DFD1 /* Main.storyboard in Resources */,
 			);
