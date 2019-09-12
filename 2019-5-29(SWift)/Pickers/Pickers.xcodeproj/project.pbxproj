@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0933820623293EFB001F83FE /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0933820523293EFB001F83FE /* statedictionary.plist */; };
 		599C7F4E2328DFCD00E8DFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F4D2328DFCD00E8DFD1 /* AppDelegate.swift */; };
 		599C7F502328DFCD00E8DFD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C7F4F2328DFCD00E8DFD1 /* ViewController.swift */; };
 		599C7F532328DFCD00E8DFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C7F512328DFCD00E8DFD1 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0933820523293EFB001F83FE /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		599C7F4A2328DFCD00E8DFD1 /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599C7F4D2328DFCD00E8DFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		599C7F4F2328DFCD00E8DFD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		599C7F4C2328DFCD00E8DFD1 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				0933820523293EFB001F83FE /* statedictionary.plist */,
 				599C7F4D2328DFCD00E8DFD1 /* AppDelegate.swift */,
 				599C7F4F2328DFCD00E8DFD1 /* ViewController.swift */,
 				599C7F5F2328E05D00E8DFD1 /* DatePickerViewController.swift */,
@@ -139,6 +142,7 @@
 			files = (
 				599C7F582328DFCE00E8DFD1 /* LaunchScreen.storyboard in Resources */,
 				599C7F552328DFCE00E8DFD1 /* Assets.xcassets in Resources */,
+				0933820623293EFB001F83FE /* statedictionary.plist in Resources */,
 				599C7F532328DFCD00E8DFD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
