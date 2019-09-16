@@ -25,7 +25,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellTableIdentifier, for: indexPath) as! NameAndColorCell
+        let cell: NameAndColorCell = tableView.dequeueReusableCell(withIdentifier: cellTableIdentifier, for: indexPath) as! NameAndColorCell
         let rowData = computers[indexPath.row]
         cell.name = rowData["Name"]!
         cell.color = rowData["Color"]!
@@ -37,7 +37,9 @@ class ViewController: UIViewController,UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tableView.register(NameAndColorCell.self, forCellReuseIdentifier: cellTableIdentifier)
+        let nib = UINib(nibName: "NameAndColorCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellTableIdentifier)
+        
     }
 
 
