@@ -29,6 +29,7 @@ class ViewController: UICollectionViewController,UICollectionViewDelegateFlowLay
         let flow = layout as! UICollectionViewFlowLayout
         flow.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 30, right: 20)
         
+        flow.headerReferenceSize = CGSize(width: 100, height: 25)
     }
     
     func wordsInSection(section: Int) -> [String] {
