@@ -13,6 +13,7 @@
 		599C80312331CEE700E8DFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599C80302331CEE700E8DFD1 /* Assets.xcassets */; };
 		599C80342331CEE700E8DFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C80322331CEE700E8DFD1 /* LaunchScreen.storyboard */; };
 		599C803C2331D03D00E8DFD1 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C803B2331D03D00E8DFD1 /* ContentCell.swift */; };
+		599C803E2331D86D00E8DFD1 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C803D2331D86D00E8DFD1 /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		599C80332331CEE700E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599C80352331CEE700E8DFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		599C803B2331D03D00E8DFD1 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		599C803D2331D86D00E8DFD1 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				599C80292331CEE600E8DFD1 /* AppDelegate.swift */,
 				599C802B2331CEE600E8DFD1 /* ViewController.swift */,
 				599C803B2331D03D00E8DFD1 /* ContentCell.swift */,
+				599C803D2331D86D00E8DFD1 /* HeaderCell.swift */,
 				599C802D2331CEE600E8DFD1 /* Main.storyboard */,
 				599C80302331CEE700E8DFD1 /* Assets.xcassets */,
 				599C80322331CEE700E8DFD1 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599C803E2331D86D00E8DFD1 /* HeaderCell.swift in Sources */,
 				599C803C2331D03D00E8DFD1 /* ContentCell.swift in Sources */,
 				599C802C2331CEE600E8DFD1 /* ViewController.swift in Sources */,
 				599C802A2331CEE600E8DFD1 /* AppDelegate.swift in Sources */,
