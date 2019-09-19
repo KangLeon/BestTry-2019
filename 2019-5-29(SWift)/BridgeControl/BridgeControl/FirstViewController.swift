@@ -31,7 +31,7 @@ class FirstViewController: UIViewController {
         authorizationCodeLabel.text = defaults.string(forKey: authorizationCodeKey)
         rankLabel.text = defaults.string(forKey: authorizationCodeKey)
         warpDriveLabel.text = defaults.bool(forKey: warpDriveKey) ? "Engaged" : "Disabled"
-        warpFactorLabel.text = (defaults.object(forKey: warpFactorLabel) as! NSNumber)
+        warpFactorLabel.text = (defaults.object(forKey: warpFactorKey) as! NSNumber).stringValue
         favoriteTeaLabel.text = defaults.string(forKey: favoriteTeaKey)
         favoriteCaptainLabel.text = defaults.string(forKey: favoriteCaptainKey)
         favoriteGadgetLabel.text = defaults.string(forKey: favoriteGadgetKey)
@@ -41,6 +41,20 @@ class FirstViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         refreshFields()
+        
+        let app = UIApplication.shared
+        NotificationCenter.default.addObserver(self, selector: Selector(("applicationWillEnterForeground:")), name: UIApplication.willEnterForegroundNotification, object: app)
+    }
+    
+    func applicationWillEnterForeground(notification: NSNotification) {
+        let defaults = UserDefaults.standard
+        defaults.synchronize()
+        refreshFields()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
     }
 }
 

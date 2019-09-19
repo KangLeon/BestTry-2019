@@ -17,14 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="n06-9j-Xtp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warp Engines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tp-4c-yom">
+                                <rect key="frame" x="20" y="79" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warp Factor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-uD-a6a">
+                                <rect key="frame" x="20" y="118" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DoY-JI-p0b">
+                                <rect key="frame" x="345" y="74" width="49" height="31"/>
+                                <connections>
+                                    <action selector="engineSwitchTapped:" destination="Gd9-g9-eCL" eventType="valueChanged" id="jte-Nf-1U6"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" minimumValueImage="turtle" maximumValueImage="rabbit" translatesAutoresizingMaskIntoConstraints="NO" id="SAs-0F-sD6">
+                                <rect key="frame" x="18" y="162" width="376" height="31"/>
+                                <connections>
+                                    <action selector="warpSliderTouched:" destination="Gd9-g9-eCL" eventType="valueChanged" id="XEk-L3-AHh"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6x-aE-kcc">
+                                <rect key="frame" x="117.5" y="770" width="179" height="30"/>
+                                <state key="normal" title="Open Settings Application"/>
+                                <connections>
+                                    <action selector="settingsButtonClicked:" destination="Gd9-g9-eCL" eventType="touchUpInside" id="Bnt-Pr-GWW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aLh-uD-a6a" firstAttribute="leading" secondItem="732-Ay-bt0" secondAttribute="leading" constant="20" id="2pt-Fl-mZ6"/>
+                            <constraint firstItem="aLh-uD-a6a" firstAttribute="top" secondItem="732-Ay-bt0" secondAttribute="top" constant="74" id="37l-GW-X5u"/>
+                            <constraint firstItem="732-Ay-bt0" firstAttribute="trailing" secondItem="DoY-JI-p0b" secondAttribute="trailing" constant="22" id="5YB-YL-tlG"/>
+                            <constraint firstItem="Q6x-aE-kcc" firstAttribute="centerX" secondItem="732-Ay-bt0" secondAttribute="centerX" id="C5h-Ye-hDP"/>
+                            <constraint firstItem="DoY-JI-p0b" firstAttribute="top" secondItem="732-Ay-bt0" secondAttribute="top" constant="30" id="ZGM-DD-sDP"/>
+                            <constraint firstItem="SAs-0F-sD6" firstAttribute="top" secondItem="732-Ay-bt0" secondAttribute="top" constant="118" id="dCQ-MN-SSY"/>
+                            <constraint firstItem="SAs-0F-sD6" firstAttribute="leading" secondItem="732-Ay-bt0" secondAttribute="leading" constant="20" id="iJU-vI-Crz"/>
+                            <constraint firstItem="732-Ay-bt0" firstAttribute="trailing" secondItem="SAs-0F-sD6" secondAttribute="trailing" constant="22" id="jQ9-0b-YAN"/>
+                            <constraint firstItem="732-Ay-bt0" firstAttribute="bottom" secondItem="Q6x-aE-kcc" secondAttribute="bottom" constant="13" id="jmA-jH-INg"/>
+                            <constraint firstItem="9tp-4c-yom" firstAttribute="leading" secondItem="732-Ay-bt0" secondAttribute="leading" constant="20" id="v1q-z6-R5q"/>
+                            <constraint firstItem="9tp-4c-yom" firstAttribute="top" secondItem="732-Ay-bt0" secondAttribute="top" constant="35" id="yVa-7K-mWg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="732-Ay-bt0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="doubleicon" selectedImage="doubleicon" id="10m-wU-Zmx"/>
+                    <connections>
+                        <outlet property="engineSwitch" destination="DoY-JI-p0b" id="Y1K-dt-CdH"/>
+                        <outlet property="warpFactorSlider" destination="SAs-0F-sD6" id="Kwv-41-dXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiq-GA-gId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="859"/>
+            <point key="canvasLocation" x="682.60869565217399" y="858.48214285714278"/>
         </scene>
         <!--Main-->
         <scene sceneID="bke-p7-FYC">
@@ -230,6 +280,8 @@
     </scenes>
     <resources>
         <image name="doubleicon" width="25" height="24"/>
+        <image name="rabbit" width="21" height="21"/>
         <image name="singleicon" width="25" height="24"/>
+        <image name="turtle" width="21" height="21"/>
     </resources>
 </document>

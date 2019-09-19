@@ -10,21 +10,53 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet var engineSwitch: UISwitch!
+    @IBOutlet var warpFactorSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func engineSwitchTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(engineSwitch.isOn, forKey: warpDriveKey)
+        defaults.synchronize()
     }
-    */
+    
+    @IBAction func warpSliderTouched(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(warpFactorSlider.value, forKey: warpFactorKey)
+        defaults.synchronize()
+    }
+    
+    @IBAction func settingsButtonClicked(_ sender: Any) {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshFields()
+        
+        let app = UIApplication.shared
+        NotificationCenter.default.addObserver(self, selector: Selector(("applicationWillEnterForeground:")), name: UIApplication.willEnterForegroundNotification, object: app)
+    }
+    
+   func refreshFields() {
+    let defaults = UserDefaults.standard
+    engineSwitch.isOn = defaults.bool(forKey: warpDriveKey)
+    warpFactorSlider.value = defaults.float(forKey: warpFactorKey)
+    }
+    
+    func applicationWillEnterForeground(notification: NSNotification) {
+        let defaults = UserDefaults.standard
+        defaults.synchronize()
+        refreshFields()
+    }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
+    }
 }
