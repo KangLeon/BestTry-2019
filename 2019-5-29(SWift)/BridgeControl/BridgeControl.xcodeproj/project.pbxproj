@@ -7,123 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		599C806B2331F8D900E8DFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C806A2331F8D900E8DFD1 /* AppDelegate.swift */; };
-		599C806D2331F8D900E8DFD1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C806C2331F8D900E8DFD1 /* MasterViewController.swift */; };
-		599C806F2331F8D900E8DFD1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C806E2331F8D900E8DFD1 /* DetailViewController.swift */; };
-		599C80722331F8D900E8DFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C80702331F8D900E8DFD1 /* Main.storyboard */; };
-		599C80742331F8DA00E8DFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599C80732331F8DA00E8DFD1 /* Assets.xcassets */; };
-		599C80772331F8DA00E8DFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C80752331F8DA00E8DFD1 /* LaunchScreen.storyboard */; };
-		599C807F233207DD00E8DFD1 /* PresidentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 599C807E233207DD00E8DFD1 /* PresidentList.plist */; };
-		599C808223320F8000E8DFD1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599C808123320F8000E8DFD1 /* WebKit.framework */; };
-		599C808423321BA400E8DFD1 /* LanguageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C808323321BA400E8DFD1 /* LanguageListController.swift */; };
-		599C808623331CF900E8DFD1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C808523331CF900E8DFD1 /* RootViewController.swift */; };
+		599C80952333297500E8DFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C80942333297500E8DFD1 /* AppDelegate.swift */; };
+		599C80972333297500E8DFD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C80962333297500E8DFD1 /* ViewController.swift */; };
+		599C809A2333297500E8DFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C80982333297500E8DFD1 /* Main.storyboard */; };
+		599C809C2333297600E8DFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599C809B2333297600E8DFD1 /* Assets.xcassets */; };
+		599C809F2333297600E8DFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C809D2333297600E8DFD1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		599C80672331F8D900E8DFD1 /* Presidents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presidents.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		599C806A2331F8D900E8DFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		599C806C2331F8D900E8DFD1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		599C806E2331F8D900E8DFD1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		599C80712331F8D900E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		599C80732331F8DA00E8DFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		599C80762331F8DA00E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		599C80782331F8DA00E8DFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		599C807E233207DD00E8DFD1 /* PresidentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PresidentList.plist; sourceTree = "<group>"; };
-		599C808123320F8000E8DFD1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		599C808323321BA400E8DFD1 /* LanguageListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageListController.swift; sourceTree = "<group>"; };
-		599C808523331CF900E8DFD1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		599C80912333297500E8DFD1 /* BridgeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		599C80942333297500E8DFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		599C80962333297500E8DFD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		599C80992333297500E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		599C809B2333297600E8DFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		599C809E2333297600E8DFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		599C80A02333297600E8DFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		599C80642331F8D900E8DFD1 /* Frameworks */ = {
+		599C808E2333297500E8DFD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599C808223320F8000E8DFD1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		599C805E2331F8D900E8DFD1 = {
+		599C80882333297500E8DFD1 = {
 			isa = PBXGroup;
 			children = (
-				599C80692331F8D900E8DFD1 /* Presidents */,
-				599C80682331F8D900E8DFD1 /* Products */,
-				599C808023320F7F00E8DFD1 /* Frameworks */,
+				599C80932333297500E8DFD1 /* BridgeControl */,
+				599C80922333297500E8DFD1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		599C80682331F8D900E8DFD1 /* Products */ = {
+		599C80922333297500E8DFD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				599C80672331F8D900E8DFD1 /* Presidents.app */,
+				599C80912333297500E8DFD1 /* BridgeControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		599C80692331F8D900E8DFD1 /* Presidents */ = {
+		599C80932333297500E8DFD1 /* BridgeControl */ = {
 			isa = PBXGroup;
 			children = (
-				599C807E233207DD00E8DFD1 /* PresidentList.plist */,
-				599C806A2331F8D900E8DFD1 /* AppDelegate.swift */,
-				599C806C2331F8D900E8DFD1 /* MasterViewController.swift */,
-				599C806E2331F8D900E8DFD1 /* DetailViewController.swift */,
-				599C808323321BA400E8DFD1 /* LanguageListController.swift */,
-				599C808523331CF900E8DFD1 /* RootViewController.swift */,
-				599C80702331F8D900E8DFD1 /* Main.storyboard */,
-				599C80732331F8DA00E8DFD1 /* Assets.xcassets */,
-				599C80752331F8DA00E8DFD1 /* LaunchScreen.storyboard */,
-				599C80782331F8DA00E8DFD1 /* Info.plist */,
+				599C80942333297500E8DFD1 /* AppDelegate.swift */,
+				599C80962333297500E8DFD1 /* ViewController.swift */,
+				599C80982333297500E8DFD1 /* Main.storyboard */,
+				599C809B2333297600E8DFD1 /* Assets.xcassets */,
+				599C809D2333297600E8DFD1 /* LaunchScreen.storyboard */,
+				599C80A02333297600E8DFD1 /* Info.plist */,
 			);
-			path = Presidents;
-			sourceTree = "<group>";
-		};
-		599C808023320F7F00E8DFD1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				599C808123320F8000E8DFD1 /* WebKit.framework */,
-			);
-			name = Frameworks;
+			path = BridgeControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		599C80662331F8D900E8DFD1 /* Presidents */ = {
+		599C80902333297500E8DFD1 /* BridgeControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 599C807B2331F8DA00E8DFD1 /* Build configuration list for PBXNativeTarget "Presidents" */;
+			buildConfigurationList = 599C80A32333297600E8DFD1 /* Build configuration list for PBXNativeTarget "BridgeControl" */;
 			buildPhases = (
-				599C80632331F8D900E8DFD1 /* Sources */,
-				599C80642331F8D900E8DFD1 /* Frameworks */,
-				599C80652331F8D900E8DFD1 /* Resources */,
+				599C808D2333297500E8DFD1 /* Sources */,
+				599C808E2333297500E8DFD1 /* Frameworks */,
+				599C808F2333297500E8DFD1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Presidents;
-			productName = Presidents;
-			productReference = 599C80672331F8D900E8DFD1 /* Presidents.app */;
+			name = BridgeControl;
+			productName = BridgeControl;
+			productReference = 599C80912333297500E8DFD1 /* BridgeControl.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		599C805F2331F8D900E8DFD1 /* Project object */ = {
+		599C80892333297500E8DFD1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = JY;
 				TargetAttributes = {
-					599C80662331F8D900E8DFD1 = {
+					599C80902333297500E8DFD1 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 599C80622331F8D900E8DFD1 /* Build configuration list for PBXProject "Presidents" */;
+			buildConfigurationList = 599C808C2333297500E8DFD1 /* Build configuration list for PBXProject "BridgeControl" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,58 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 599C805E2331F8D900E8DFD1;
-			productRefGroup = 599C80682331F8D900E8DFD1 /* Products */;
+			mainGroup = 599C80882333297500E8DFD1;
+			productRefGroup = 599C80922333297500E8DFD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				599C80662331F8D900E8DFD1 /* Presidents */,
+				599C80902333297500E8DFD1 /* BridgeControl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		599C80652331F8D900E8DFD1 /* Resources */ = {
+		599C808F2333297500E8DFD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599C80772331F8DA00E8DFD1 /* LaunchScreen.storyboard in Resources */,
-				599C80742331F8DA00E8DFD1 /* Assets.xcassets in Resources */,
-				599C80722331F8D900E8DFD1 /* Main.storyboard in Resources */,
-				599C807F233207DD00E8DFD1 /* PresidentList.plist in Resources */,
+				599C809F2333297600E8DFD1 /* LaunchScreen.storyboard in Resources */,
+				599C809C2333297600E8DFD1 /* Assets.xcassets in Resources */,
+				599C809A2333297500E8DFD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		599C80632331F8D900E8DFD1 /* Sources */ = {
+		599C808D2333297500E8DFD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599C808623331CF900E8DFD1 /* RootViewController.swift in Sources */,
-				599C806F2331F8D900E8DFD1 /* DetailViewController.swift in Sources */,
-				599C806D2331F8D900E8DFD1 /* MasterViewController.swift in Sources */,
-				599C806B2331F8D900E8DFD1 /* AppDelegate.swift in Sources */,
-				599C808423321BA400E8DFD1 /* LanguageListController.swift in Sources */,
+				599C80972333297500E8DFD1 /* ViewController.swift in Sources */,
+				599C80952333297500E8DFD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		599C80702331F8D900E8DFD1 /* Main.storyboard */ = {
+		599C80982333297500E8DFD1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				599C80712331F8D900E8DFD1 /* Base */,
+				599C80992333297500E8DFD1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		599C80752331F8DA00E8DFD1 /* LaunchScreen.storyboard */ = {
+		599C809D2333297600E8DFD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				599C80762331F8DA00E8DFD1 /* Base */,
+				599C809E2333297600E8DFD1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		599C80792331F8DA00E8DFD1 /* Debug */ = {
+		599C80A12333297600E8DFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		599C807A2331F8DA00E8DFD1 /* Release */ = {
+		599C80A22333297600E8DFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,36 +278,36 @@
 			};
 			name = Release;
 		};
-		599C807C2331F8DA00E8DFD1 /* Debug */ = {
+		599C80A42333297600E8DFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DR4WPFLXBN;
-				INFOPLIST_FILE = Presidents/Info.plist;
+				INFOPLIST_FILE = BridgeControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiyoung.Presidents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiyoung.BridgeControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		599C807D2331F8DA00E8DFD1 /* Release */ = {
+		599C80A52333297600E8DFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DR4WPFLXBN;
-				INFOPLIST_FILE = Presidents/Info.plist;
+				INFOPLIST_FILE = BridgeControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiyoung.Presidents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiyoung.BridgeControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		599C80622331F8D900E8DFD1 /* Build configuration list for PBXProject "Presidents" */ = {
+		599C808C2333297500E8DFD1 /* Build configuration list for PBXProject "BridgeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				599C80792331F8DA00E8DFD1 /* Debug */,
-				599C807A2331F8DA00E8DFD1 /* Release */,
+				599C80A12333297600E8DFD1 /* Debug */,
+				599C80A22333297600E8DFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		599C807B2331F8DA00E8DFD1 /* Build configuration list for PBXNativeTarget "Presidents" */ = {
+		599C80A32333297600E8DFD1 /* Build configuration list for PBXNativeTarget "BridgeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				599C807C2331F8DA00E8DFD1 /* Debug */,
-				599C807D2331F8DA00E8DFD1 /* Release */,
+				599C80A42333297600E8DFD1 /* Debug */,
+				599C80A52333297600E8DFD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 599C805F2331F8D900E8DFD1 /* Project object */;
+	rootObject = 599C80892333297500E8DFD1 /* Project object */;
 }

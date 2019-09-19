@@ -40,9 +40,14 @@ class MasterViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = presidents[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                if let oldController = detailViewController {
+                    controller.languageString = oldController.languageString
+                }
                 controller.detailItem = object as [String: String]
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
+                
+                detailViewController = controller
             }
         }
     }
