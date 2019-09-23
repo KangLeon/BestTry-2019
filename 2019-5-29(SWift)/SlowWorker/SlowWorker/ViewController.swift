@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         return "Hi three"
     }
     
-    func porcessData(data: String) -> String {
+    func processData(data: String) -> String {
         Thread.sleep(forTimeInterval: 2)
         return data.uppercased()
     }
@@ -30,7 +30,20 @@ class ViewController: UIViewController {
     
     func calculateSecondResult(data: String) -> String {
         Thread.sleep(forTimeInterval: 4)
-        return data.r
+        return data.replacingOccurrences(of: "E", with: "e")
+    }
+    
+    @IBAction func doWork(sender: AnyObject) {
+        let startTime = NSDate()
+        self.resultsTextView.text = ""
+        let fetchdData = self.fetchSomethingFormServer()
+        let processdData = self.processData(data: fetchdData)
+        let firstResult = self.calculateFirstResult(data: processdData)
+        let secondResult = self.calculateSecondResult(data: processdData)
+        let resultsSummary = "First: [\(firstResult)\nSecond:[\(secondResult)]]"
+        self.resultsTextView.text = resultsSummary
+        let endTime = NSDate()
+        print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
     }
     
     override func viewDidLoad() {
