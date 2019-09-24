@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var startButton: UIButton!
     @IBOutlet var resultsTextView: UITextView!
+    @IBOutlet var spinner: UIActivityIndicatorView!
     
     func fetchSomethingFormServer() -> String {
         Thread.sleep(forTimeInterval: 1)
@@ -34,16 +35,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func doWork(sender: AnyObject) {
-        let startTime = NSDate()
-        self.resultsTextView.text = ""
-        let fetchdData = self.fetchSomethingFormServer()
-        let processdData = self.processData(data: fetchdData)
-        let firstResult = self.calculateFirstResult(data: processdData)
-        let secondResult = self.calculateSecondResult(data: processdData)
-        let resultsSummary = "First: [\(firstResult)\nSecond:[\(secondResult)]]"
-        self.resultsTextView.text = resultsSummary
-        let endTime = NSDate()
-        print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
+        let startTime = Date()
+        resultsTextView.text = ""
+        startButton.isEnabled = false
+        spinner.startAnimating()
+        let queue = DispatchQueue.global()
+        
+        queue.async {
+            let fetchdData = self.fetchSomethingFormServer()
+            let processdData = self.processData(data: fetchdData)
+            
+            var firstResult: String!
+            var secondResult: String!
+            let group = DispatchGroup()
+            
+            queue.async(group: group, qos: .default, flags: []) {
+                firstResult = self.calculateFirstResult(data: processdData)
+            }
+            
+            queue.async(group: group, qos: .default, flags: []) {
+                secondResult = self.calculateSecondResult(data: processdData)
+            }
+            
+            group.notify(qos: .default, flags: [], queue: queue) {
+                let resultsSummary = "First: [\(firstResult)\nSecond:[\(secondResult)]]"
+                DispatchQueue.main.async {
+                    self.resultsTextView.text = resultsSummary
+                    self.startButton.isEnabled = true
+                    self.spinner.stopAnimating()
+                }
+                let endTime = Date()
+                print("Completed in \(endTime.timeIntervalSince(startTime as Date)) seconds")
+            }
+            
+        }
     }
     
     override func viewDidLoad() {
@@ -51,6 +76,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    
 }
 
