@@ -12,10 +12,10 @@ class ProgressViewController: UIViewController {
 
     let slider = UISlider(frame: CGRect.zero)
     
-    let layerOne = CALayer()
-    let layerTwo = CALayer()
-    let layerThree = CALayer()
-    let layerFour = CALayer()
+    let layerOne = ProgressLayer()
+    let layerTwo = ProgressLayer()
+    let layerThree = ProgressLayer()
+    let layerFour = ProgressLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,13 @@ class ProgressViewController: UIViewController {
         self.slider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)
         
         self.view.layer.addSublayer(layerOne)
+        self.layerOne.number = 0.0
         self.view.layer.addSublayer(layerTwo)
+        self.layerTwo.number = 0.0
         self.view.layer.addSublayer(layerThree)
+        self.layerThree.number = 0.0
         self.view.layer.addSublayer(layerFour)
+        self.layerFour.number = 0.0
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,7 +49,10 @@ class ProgressViewController: UIViewController {
     }
     
     @objc func sliderValueChanged() {
-        
+        self.layerOne.number = Double(self.slider.value)
+        self.layerTwo.number = Double(self.slider.value)
+        self.layerThree.number = Double(self.slider.value)
+        self.layerFour.number = Double(self.slider.value)
     }
     
     /*
@@ -60,6 +67,47 @@ class ProgressViewController: UIViewController {
 
 }
 
+//圆形进度条的父类，用于显示百分比文本
 class ProgressLayer: CALayer {
-    <#code#>
+    var number : Double = 0.0{
+        didSet{
+            self.tLayer.string = String(format: "%.01f", number*100)
+            self.tLayer.setNeedsDisplay()
+        }
+    }
+    
+    let tLayer : CATextLayer = {
+        let labelLayer = CATextLayer()
+        let font = UIFont.systemFont(ofSize: 12)
+        labelLayer.font = font.fontName as CFTypeRef
+        labelLayer.fontSize = font.pointSize
+        labelLayer.alignmentMode = .center
+        labelLayer.foregroundColor = UIColor.black.cgColor
+        labelLayer.contentsScale = UIScreen.main.scale
+        labelLayer.isWrapped = true
+        labelLayer.string = ""
+        return labelLayer
+    }()
+    
+    override init() {
+        super.init()
+        self.addSublayer(tLayer)
+    }
+    
+    override init(layer: Any) {
+        super.init(layer: layer)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSublayers() {
+        super.layoutSublayers()
+        let th = NSString(string: "100%").boundingRect(with: CGSize(width: CGFloat.infinity, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12)], context: nil).height
+        
+        self.tLayer.frame = CGRect(x: 0, y: self.frame.height*0.5-th*0.5, width: self.frame.width, height: th)
+        
+        
+    }
 }
