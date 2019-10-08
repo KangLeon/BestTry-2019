@@ -12,10 +12,10 @@ class ProgressViewController: UIViewController {
 
     let slider = UISlider(frame: CGRect.zero)
     
-    let layerOne = ProgressLayer()
-    let layerTwo = ProgressLayer()
-    let layerThree = ProgressLayer()
-    let layerFour = ProgressLayer()
+    let layerOne = ProgressOneLayer()
+    let layerTwo = ProgressTwoLayer()
+    let layerThree = ProgressThreeLayer()
+    let layerFour = ProgressFourLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +73,7 @@ class ProgressLayer: CALayer {
         didSet{
             self.tLayer.string = String(format: "%.01f", number*100)
             self.tLayer.setNeedsDisplay()
+            self.setNeedsDisplay()
         }
     }
     
@@ -109,5 +110,75 @@ class ProgressLayer: CALayer {
         self.tLayer.frame = CGRect(x: 0, y: self.frame.height*0.5-th*0.5, width: self.frame.width, height: th)
         
         
+    }
+}
+
+class ProgressOneLayer: ProgressLayer {
+    override func draw(in ctx: CGContext) {
+        
+        let radius = self.frame.width * 0.45
+        let center = CGPoint(x: self.frame.width*0.5, y: self.frame.height*0.5)
+        
+        
+        ctx.setStrokeColor(UIColor.cyan.cgColor)
+        ctx.setLineWidth(radius*0.08)
+        ctx.setLineCap(.round)
+        
+        let endAngle = CGFloat(self.number) * CGFloat.pi * 2.0 - 0.5 * CGFloat.pi
+        ctx.addArc(center: center, radius: radius, startAngle: -0.5 * CGFloat.pi, endAngle: endAngle, clockwise: false)
+        
+        ctx.strokePath()
+    }
+}
+
+class ProgressTwoLayer: ProgressLayer {
+    override func draw(in ctx: CGContext) {
+        let radius = self.frame.width * 0.45
+        let center = CGPoint(x: self.frame.width*0.5, y: self.frame.height*0.5)
+        
+        ctx.move(to: center)
+        ctx.setFillColor(UIColor.yellow.cgColor)
+        ctx.addLine(to: CGPoint(x: center.x, y: self.frame.height*0.05))
+        let endAngle = CGFloat(self.number) * CGFloat.pi * 2.0 - 0.5 * CGFloat.pi
+        ctx.addArc(center: center, radius: radius, startAngle: -0.5*CGFloat.pi, endAngle: endAngle, clockwise: false)
+        ctx.closePath()
+        
+        ctx.fillPath()
+    }
+}
+
+class ProgressThreeLayer: ProgressLayer {
+    override func draw(in ctx: CGContext) {
+        let radius = self.frame.width * 0.45
+        let center = CGPoint(x: self.frame.width*0.5, y: self.frame.height*0.5)
+        ctx.setFillColor(UIColor.orange.cgColor)
+        let startAngle = CGFloat.pi*0.5 - CGFloat(self.number)*CGFloat.pi
+        let endAngle = CGFloat.pi*0.5 + CGFloat(self.number)*CGFloat.pi
+        ctx.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
+        ctx.closePath()
+        
+        ctx.fillPath()
+    }
+}
+
+class ProgressFourLayer: ProgressLayer {
+    override func draw(in ctx: CGContext) {
+        
+        let radius = self.frame.width * 0.45
+        let center = CGPoint(x: self.frame.width*0.5, y: self.frame.height*0.5)
+        
+        ctx.setStrokeColor(UIColor.gray.withAlphaComponent(0.8).cgColor)
+        ctx.setLineWidth(radius*0.07)
+        ctx.addEllipse(in: CGRect(x: self.frame.width*0.05, y: self.frame.height*0.05, width: self.frame.width*0.9, height: self.frame.height*0.9))
+        ctx.strokePath()
+        
+        ctx.setStrokeColor(UIColor.red.cgColor)
+        ctx.setLineWidth(radius*0.08)
+        ctx.setLineCap(.round)
+        
+        let endAngle = CGFloat(self.number) * CGFloat.pi * 2.0 - 0.5 * CGFloat.pi
+        ctx.addArc(center: center, radius: radius, startAngle: -0.5 * CGFloat.pi, endAngle: endAngle, clockwise: false)
+        
+        ctx.strokePath()
     }
 }
