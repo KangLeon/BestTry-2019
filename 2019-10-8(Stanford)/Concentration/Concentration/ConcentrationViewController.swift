@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
 
     @IBOutlet private weak var flipCountLabel: UILabel! {
         didSet {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     private func updateFlipCountLabel() {
         let attributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.strokeWidth: 5.0,
-            NSAttributedString.Key.strokeColor: UIColor.orange
+            NSAttributedString.Key.strokeColor: UIColor.black
         ]
         
         let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
@@ -62,11 +62,19 @@ class ViewController: UIViewController {
             let card = game.cards[index]
             if card.isFaceUo {
                 button.setTitle(emoji(for: card), for: .normal)
-                button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                button.backgroundColor = UIColor.gray
             }else{
                 button.setTitle("", for: .normal)
-                button.backgroundColor = card.isMatched ? UIColor.clear : UIColor.orange
+                button.backgroundColor = card.isMatched ? UIColor.clear : UIColor.blue
             }
+        }
+    }
+    
+    var theme: String? {
+        didSet {
+            emojiChoices = theme ?? ""
+            emoji = [:]
+            updateViewFromModel()
         }
     }
     
