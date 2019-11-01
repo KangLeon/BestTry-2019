@@ -13,6 +13,8 @@
 		59A7B0E6236C2C1A00450A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A7B0E5236C2C1A00450A7F /* Assets.xcassets */; };
 		59A7B0E9236C2C1A00450A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A7B0E7236C2C1A00450A7F /* LaunchScreen.storyboard */; };
 		59A7B0F2236C2D1600450A7F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A7B0F1236C2D1600450A7F /* ImageViewController.swift */; };
+		59A7B0F4236C354100450A7F /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A7B0F3236C354100450A7F /* DemoURLs.swift */; };
+		59A7B0F6236C354800450A7F /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59A7B0F5236C354800450A7F /* oval.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		59A7B0E8236C2C1A00450A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59A7B0EA236C2C1A00450A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A7B0F1236C2D1600450A7F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		59A7B0F3236C354100450A7F /* DemoURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
+		59A7B0F5236C354800450A7F /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +60,12 @@
 		59A7B0DB236C2C1900450A7F /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
+				59A7B0F3236C354100450A7F /* DemoURLs.swift */,
 				59A7B0E2236C2C1900450A7F /* Main.storyboard */,
 				59A7B0F1236C2D1600450A7F /* ImageViewController.swift */,
+				59A7B0F5236C354800450A7F /* oval.jpg */,
 				59A7B0E5236C2C1A00450A7F /* Assets.xcassets */,
 				59A7B0F0236C2C5800450A7F /* Supporting Files */,
-				59A7B0EA236C2C1A00450A7F /* Info.plist */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -68,6 +73,7 @@
 		59A7B0F0236C2C5800450A7F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59A7B0EA236C2C1A00450A7F /* Info.plist */,
 				59A7B0DE236C2C1900450A7F /* SceneDelegate.swift */,
 				59A7B0DC236C2C1900450A7F /* AppDelegate.swift */,
 				59A7B0E7236C2C1A00450A7F /* LaunchScreen.storyboard */,
@@ -134,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A7B0E9236C2C1A00450A7F /* LaunchScreen.storyboard in Resources */,
+				59A7B0F6236C354800450A7F /* oval.jpg in Resources */,
 				59A7B0E6236C2C1A00450A7F /* Assets.xcassets in Resources */,
 				59A7B0E4236C2C1900450A7F /* Main.storyboard in Resources */,
 			);
@@ -146,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A7B0F4236C354100450A7F /* DemoURLs.swift in Sources */,
 				59A7B0DD236C2C1900450A7F /* AppDelegate.swift in Sources */,
 				59A7B0F2236C2D1600450A7F /* ImageViewController.swift in Sources */,
 				59A7B0DF236C2C1900450A7F /* SceneDelegate.swift in Sources */,

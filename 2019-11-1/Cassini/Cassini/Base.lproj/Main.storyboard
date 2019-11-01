@@ -21,13 +21,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KB3-8T-VXM" firstAttribute="trailing" secondItem="imX-si-bSZ" secondAttribute="trailing" id="CAr-AQ-feQ"/>
-                            <constraint firstItem="KB3-8T-VXM" firstAttribute="leading" secondItem="imX-si-bSZ" secondAttribute="leading" id="UsZ-Rt-rfE"/>
+                            <constraint firstItem="KB3-8T-VXM" firstAttribute="trailing" secondItem="mVo-OH-YXW" secondAttribute="trailing" id="CAr-AQ-feQ"/>
+                            <constraint firstItem="KB3-8T-VXM" firstAttribute="leading" secondItem="mVo-OH-YXW" secondAttribute="leading" id="UsZ-Rt-rfE"/>
                             <constraint firstItem="KB3-8T-VXM" firstAttribute="top" secondItem="mVo-OH-YXW" secondAttribute="top" id="lvd-yJ-wCV"/>
                             <constraint firstAttribute="bottom" secondItem="KB3-8T-VXM" secondAttribute="bottom" id="vS3-T2-sYD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="imX-si-bSZ"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="KB3-8T-VXM" id="J8b-Oe-N5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfk-z0-hb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
