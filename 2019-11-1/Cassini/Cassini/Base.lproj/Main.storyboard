@@ -15,21 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-8T-VXM">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="896" translatesAutoresizingMaskIntoConstraints="NO" id="Lul-Kg-CBg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="my7-Yt-fWy"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="MbY-8w-KnM"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KB3-8T-VXM" firstAttribute="trailing" secondItem="mVo-OH-YXW" secondAttribute="trailing" id="CAr-AQ-feQ"/>
-                            <constraint firstItem="KB3-8T-VXM" firstAttribute="leading" secondItem="mVo-OH-YXW" secondAttribute="leading" id="UsZ-Rt-rfE"/>
-                            <constraint firstItem="KB3-8T-VXM" firstAttribute="top" secondItem="mVo-OH-YXW" secondAttribute="top" id="lvd-yJ-wCV"/>
-                            <constraint firstAttribute="bottom" secondItem="KB3-8T-VXM" secondAttribute="bottom" id="vS3-T2-sYD"/>
+                            <constraint firstItem="Lul-Kg-CBg" firstAttribute="leading" secondItem="mVo-OH-YXW" secondAttribute="leading" id="255-2w-ghx"/>
+                            <constraint firstItem="Lul-Kg-CBg" firstAttribute="trailing" secondItem="mVo-OH-YXW" secondAttribute="trailing" id="4od-qA-A46"/>
+                            <constraint firstAttribute="bottom" secondItem="Lul-Kg-CBg" secondAttribute="bottom" id="jK7-zy-5dH"/>
+                            <constraint firstItem="Lul-Kg-CBg" firstAttribute="top" secondItem="mVo-OH-YXW" secondAttribute="top" id="qpZ-zh-43q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="imX-si-bSZ"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="KB3-8T-VXM" id="J8b-Oe-N5c"/>
+                        <outlet property="scrollView" destination="Lul-Kg-CBg" id="T8m-Sp-5La"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfk-z0-hb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

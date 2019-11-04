@@ -65,6 +65,7 @@
 				59A7B0F1236C2D1600450A7F /* ImageViewController.swift */,
 				59A7B0F5236C354800450A7F /* oval.jpg */,
 				59A7B0E5236C2C1A00450A7F /* Assets.xcassets */,
+				59A7B0EA236C2C1A00450A7F /* Info.plist */,
 				59A7B0F0236C2C5800450A7F /* Supporting Files */,
 			);
 			path = Cassini;
@@ -73,7 +74,6 @@
 		59A7B0F0236C2C5800450A7F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				59A7B0EA236C2C1A00450A7F /* Info.plist */,
 				59A7B0DE236C2C1900450A7F /* SceneDelegate.swift */,
 				59A7B0DC236C2C1900450A7F /* AppDelegate.swift */,
 				59A7B0E7236C2C1A00450A7F /* LaunchScreen.storyboard */,
