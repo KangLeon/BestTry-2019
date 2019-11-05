@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EmojiArtViewController.swift
 //  EmojiArt
 //
 //  Created by 吉腾蛟 on 2019/11/4.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EmojiArtViewController: UIViewController {
 
+    @IBOutlet weak var dropZone: UIView!
+    @IBOutlet weak var emojiArtView: EmojiArtView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
