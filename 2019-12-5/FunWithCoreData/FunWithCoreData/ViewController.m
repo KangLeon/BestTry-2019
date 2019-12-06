@@ -6,6 +6,17 @@
 //  Copyright © 2019 JY. All rights reserved.
 //
 
+/*
+ NSManagedObjectContext 管理对象，上下文，持久性存储模型对象，处理数据与应用的交互
+ NSManagedObjectModel 被管理的数据模型，数据结构
+ NSPersistentStoreCoordinator 添加数据库，设置数据存储的名字，位置，存储方式
+ NSManagedObject 被管理的数据记录
+ NSFetchRequest 数据请求
+ NSEntityDescription 表格实体结构
+
+ 
+ */
+
 #import "ViewController.h"
 #import "Student+CoreDataClass.h"
 #import "Student+CoreDataProperties.h"
