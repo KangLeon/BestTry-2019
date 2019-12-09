@@ -14,6 +14,9 @@
 		5970D6B5225B079500E9F2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5970D6B3225B079500E9F2CB /* LaunchScreen.storyboard */; };
 		5970D6C0225B079500E9F2CB /* LiquidMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5970D6BF225B079500E9F2CB /* LiquidMenuTests.swift */; };
 		5970D6CB225B079500E9F2CB /* LiquidMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5970D6CA225B079500E9F2CB /* LiquidMenuUITests.swift */; };
+		597D209D239E4A1200ED5F6E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D209C239E4A1200ED5F6E /* ArrayExtension.swift */; };
+		597D209F239E4B2900ED5F6E /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D209E239E4B2900ED5F6E /* CGPointExtension.swift */; };
+		597D20A2239E5CA400ED5F6E /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5970D6C6225B079500E9F2CB /* LiquidMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5970D6CA225B079500E9F2CB /* LiquidMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidMenuUITests.swift; sourceTree = "<group>"; };
 		5970D6CC225B079500E9F2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		597D209C239E4A1200ED5F6E /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		597D209E239E4B2900ED5F6E /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 			children = (
 				5970D6AA225B079500E9F2CB /* AppDelegate.swift */,
 				5970D6AC225B079500E9F2CB /* ViewController.swift */,
+				597D20A3239E5D2D00ED5F6E /* LiquidFloatingActionButton */,
 				5970D6AE225B079500E9F2CB /* Main.storyboard */,
 				5970D6B1225B079500E9F2CB /* Assets.xcassets */,
 				5970D6B3225B079500E9F2CB /* LaunchScreen.storyboard */,
@@ -123,6 +130,16 @@
 				5970D6CC225B079500E9F2CB /* Info.plist */,
 			);
 			path = LiquidMenuUITests;
+			sourceTree = "<group>";
+		};
+		597D20A3239E5D2D00ED5F6E /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				597D209C239E4A1200ED5F6E /* ArrayExtension.swift */,
+				597D209E239E4B2900ED5F6E /* CGPointExtension.swift */,
+				597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */,
+			);
+			path = LiquidFloatingActionButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597D20A2239E5CA400ED5F6E /* CGRectExtension.swift in Sources */,
+				597D209D239E4A1200ED5F6E /* ArrayExtension.swift in Sources */,
 				5970D6AD225B079500E9F2CB /* ViewController.swift in Sources */,
+				597D209F239E4B2900ED5F6E /* CGPointExtension.swift in Sources */,
 				5970D6AB225B079500E9F2CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
