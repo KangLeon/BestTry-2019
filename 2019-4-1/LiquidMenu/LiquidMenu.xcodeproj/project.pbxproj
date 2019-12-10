@@ -17,6 +17,9 @@
 		597D209D239E4A1200ED5F6E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D209C239E4A1200ED5F6E /* ArrayExtension.swift */; };
 		597D209F239E4B2900ED5F6E /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D209E239E4B2900ED5F6E /* CGPointExtension.swift */; };
 		597D20A2239E5CA400ED5F6E /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */; };
+		597D20A5239F61DF00ED5F6E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D20A4239F61DF00ED5F6E /* UIColorExtension.swift */; };
+		597D20A7239F632800ED5F6E /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D20A6239F632800ED5F6E /* LiquidUtil.swift */; };
+		597D20A9239F65A500ED5F6E /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597D20A8239F65A500ED5F6E /* LiquittableCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		597D209C239E4A1200ED5F6E /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		597D209E239E4B2900ED5F6E /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		597D20A4239F61DF00ED5F6E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		597D20A6239F632800ED5F6E /* LiquidUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
+		597D20A8239F65A500ED5F6E /* LiquittableCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 				597D209C239E4A1200ED5F6E /* ArrayExtension.swift */,
 				597D209E239E4B2900ED5F6E /* CGPointExtension.swift */,
 				597D20A1239E5CA400ED5F6E /* CGRectExtension.swift */,
+				597D20A4239F61DF00ED5F6E /* UIColorExtension.swift */,
+				597D20A6239F632800ED5F6E /* LiquidUtil.swift */,
+				597D20A8239F65A500ED5F6E /* LiquittableCircle.swift */,
 			);
 			path = LiquidFloatingActionButton;
 			sourceTree = "<group>";
@@ -275,9 +284,12 @@
 			files = (
 				597D20A2239E5CA400ED5F6E /* CGRectExtension.swift in Sources */,
 				597D209D239E4A1200ED5F6E /* ArrayExtension.swift in Sources */,
+				597D20A7239F632800ED5F6E /* LiquidUtil.swift in Sources */,
 				5970D6AD225B079500E9F2CB /* ViewController.swift in Sources */,
+				597D20A9239F65A500ED5F6E /* LiquittableCircle.swift in Sources */,
 				597D209F239E4B2900ED5F6E /* CGPointExtension.swift in Sources */,
 				5970D6AB225B079500E9F2CB /* AppDelegate.swift in Sources */,
+				597D20A5239F61DF00ED5F6E /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
